@@ -8,6 +8,7 @@ import Header from "@/components/Header";
 import StatCard from "@/components/StatCard";
 import { Survei } from "@/types/survei";
 import SurveyTable from "@/components/SurveyTable";
+import ExportButton from "@/components/ExportButton";
 
 export default function Dashboard() {
 
@@ -93,23 +94,21 @@ export default function Dashboard() {
           />
 
                </div>
-            <div className="flex gap-4 mt-8 mb-6">
+            <div className="flex items-center gap-4 mt-8 mb-6">
 
-  <select
-    value={filterLoket}
-    onChange={(e) => setFilterLoket(e.target.value)}
-    className="border rounded-xl px-4 py-3 bg-white shadow"
-  >
+            <select
+            value={filterLoket}
+            onChange={(e) => setFilterLoket(e.target.value)}
+            className="border rounded-xl px-4 py-3 bg-white shadow"
+            >
+            <option>Semua</option>
+            <option>Loket 1</option>
+            <option>Loket 2</option>
+            </select>
 
-    <option>Semua</option>
+            <ExportButton data={filteredData} />
 
-    <option>Loket 1</option>
-
-    <option>Loket 2</option>
-
-  </select>
-
-</div>
+            </div>
         <SurveyTable data={filteredData} />
 
       </div>
