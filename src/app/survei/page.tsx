@@ -137,7 +137,7 @@ const pelayanan =
         </div>
 
         <Pertanyaan
-          judul="1. Kebersihan Ruangan"
+          judul="1. Kebersihan Ruangan Loket"
           value={kebersihan}
           setValue={setKebersihan}
         />
@@ -149,13 +149,13 @@ const pelayanan =
         />
 
         <Pertanyaan
-          judul="3. Solusi yang Disampaikan"
+          judul="3. Solusi yang Disampaikan Pelayanan"
           value={solusi}
           setValue={setSolusi}
         />
 
         <Pertanyaan
-          judul="4. Informasi yang Disampaikan"
+          judul="4. Informasi yang Disampaikan Pelayanan"
           value={informasi}
           setValue={setInformasi}
         />

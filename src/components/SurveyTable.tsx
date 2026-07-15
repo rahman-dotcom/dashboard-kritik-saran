@@ -22,13 +22,13 @@ export default function SurveyTable({ data }: Props) {
 
             <th className="text-left p-3">Loket</th>
 
-            <th className="text-center p-3">Kebersihan</th>
+            <th className="text-center p-3">Kebersihan Loket</th>
 
-            <th className="text-center p-3">Keramahan</th>
+            <th className="text-center p-3">Keramahan Petugas</th>
 
-            <th className="text-center p-3">Solusi</th>
+            <th className="text-center p-3">Solusi Pelayanan</th>
 
-            <th className="text-center p-3">Informasi</th>
+            <th className="text-center p-3">Informasi Pelayanan</th>
 
             <th className="p-3 text-center">Kepuasan</th>
 
