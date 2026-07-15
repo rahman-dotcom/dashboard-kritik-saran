@@ -5,6 +5,20 @@ type Props = {
 };
 
 export default function SurveyTable({ data }: Props) {
+
+  const getLabel = (nilai: number) => {
+  switch (nilai) {
+    case 1:
+      return "😞 Kurang";
+    case 2:
+      return "😐 Cukup";
+    case 3:
+      return "😊 Baik";
+    default:
+      return "-";
+  }
+};
+
   return (
     <div className="bg-white rounded-2xl shadow-lg p-6 mt-8 overflow-x-auto">
 
@@ -54,19 +68,19 @@ export default function SurveyTable({ data }: Props) {
               </td>
 
               <td className="text-center">
-                {item.kebersihan}
+                {getLabel(item.kebersihan)}
               </td>
 
               <td className="text-center">
-                {item.keramahan}
+                {getLabel(item.keramahan)}
               </td>
 
               <td className="text-center">
-                {item.solusi}
+                {getLabel(item.solusi)}
               </td>
 
               <td className="text-center">
-                {item.informasi}
+                {getLabel(item.informasi)}
               </td>
 
               <td className="p-3 text-center text-3xl">
